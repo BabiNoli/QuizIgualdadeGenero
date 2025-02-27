@@ -62,7 +62,7 @@ class TelaResultado(tk.Frame):
         if not  self.master.jogador.anonimo:
             if self.master.jogador.nome:
 
-                self.master.db.atualizar_pontuacao(self.master.jogador.nome, porcentagem, self.master.jogador.pin)
+                self.master.db.atualizar_pontuacao(self.master.jogador.nome, self.master.jogador.pin, porcentagem)
 
         msgs = self.master.jogador.mensagens
         btn_jogar = tk.Button(
